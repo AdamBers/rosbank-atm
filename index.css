@@ -226,3 +226,23 @@ html, body {
 .chart-item-5 {
     min-width: 350px;
 }
+
+.chart-item-5 .row-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+    color: #264653;
+    opacity: 0.5;
+}
+
+.w3-blue, .w3-hover-blue:hover {
+    background: #001C3D !important;
+    border-radius: 20px;
+}
+
+.chart-item-5 .grade-row-1 {
+    margin-bottom: 24px;
+}
