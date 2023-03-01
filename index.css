@@ -28,6 +28,15 @@ html, body {
     padding: 32px 20px;
 }
 
+.chart {
+    background: #FFFFFF;
+    border: 1px solid #EBEDEF;
+    box-shadow: 0px 89px 36px rgba(17, 50, 74, 0.01), 0px 50px 30px rgba(17, 50, 74, 0.02), 0px 22px 22px rgba(17, 50, 74, 0.03), 0px 6px 12px rgba(17, 50, 74, 0.04), 0px 0px 0px rgba(17, 50, 74, 0.04);
+    border-radius: 10px;
+    margin-bottom: 42px;
+    padding-bottom: 24px;
+}
+
 .chart-title p {
     font-family: 'Poppins';
     font-style: normal;
@@ -71,7 +80,7 @@ html, body {
 
 .grade {
     display: flex;
-
+    margin: auto 20px;
 }
 
 .circle-1 {
@@ -135,10 +144,6 @@ html, body {
     max-width: 670px;
     padding: 24px;
     width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #EBEDEF;
-    box-shadow: 0px 89px 36px rgba(17, 50, 74, 0.01), 0px 50px 30px rgba(17, 50, 74, 0.02), 0px 22px 22px rgba(17, 50, 74, 0.03), 0px 6px 12px rgba(17, 50, 74, 0.04), 0px 0px 0px rgba(17, 50, 74, 0.04);
-    border-radius: 10px;
 }
 
 .row {
@@ -192,9 +197,12 @@ html, body {
     justify-content: space-between;
 }
 
-.w3-red {
-    background: #EE293D;
+.w3-red {}
+
+.w3-red, .w3-hover-red:hover {
     border-radius: 20px;
+    color: #fff !important;
+    background-color: #EE293D !important;
 }
 
 .w3-border {
@@ -225,6 +233,7 @@ html, body {
 
 .chart-item-5 {
     min-width: 350px;
+    margin-bottom: 42px;
 }
 
 .chart-item-5 .row-name {
@@ -243,6 +252,77 @@ html, body {
     border-radius: 20px;
 }
 
-.chart-item-5 .grade-row-1 {
+.chart-item-5 .grade-row-1,
+.chart-item-6 .grade-row-1 {
     margin-bottom: 24px;
+}
+
+.chart-item-6 {
+    min-width: 670px;
+    padding: 30px 24px;
+    margin-bottom: 42px;
+}
+
+
+
+.chart-inner-name {
+    display: block;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #241023;
+    margin-bottom: 38px;
+    align-items: center;
+    vertical-align: middle;
+    height: 24px;
+    line-height: 24px;
+}
+
+.chart-7-canvas-wrp {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid yellow;
+}
+
+
+
+.chart-item-7 {
+    padding: 30px;
+    margin-bottom: 42px;
+}
+
+.chart-8-legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.chart-item-8 {
+    padding: 30px;
+}
+
+.chart-8-canvas-wrp {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid yellow;
+}
+
+.row-grade {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+
+.nameChart-8 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #241023;
 }
