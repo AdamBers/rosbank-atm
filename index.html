@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
     <div class="container">
-
 
         <!-- /////////////////////////////////////////////////////////////////// -->
 
@@ -21,8 +24,8 @@
         </div>
 
         <div class="chart chart-item-1">
-            <div class="canvas-wrp"> </div>
-            <div class="html-legend">
+            <canvas class="canvas-wrp" id="chart-1"> </canvas>
+            <div class="html-legend" id="legend-1">
                 <div class="legend-item">
                     <div class="grade">
                         <span class="circle-1"></span>
@@ -486,6 +489,8 @@
 
 
     </div>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
