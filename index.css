@@ -49,7 +49,7 @@ html, body {
     color: #264653;
 }
 
-.chart-item-1, .chart-item-3, .chart-item-5 {
+.chart-item-1, .chart-item-3, .chart-item-5, .chart-item-9 {
     width: 33%;
     min-width: 300px;
     border: 1px solid #EBEDEF;
@@ -62,7 +62,7 @@ html, body {
 .canvas-wrp {
     width: 188px;
     height: 188px;
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0 auto;
     margin-bottom: 42px;
     /* border-radius: 50%; */
