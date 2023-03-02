@@ -308,7 +308,7 @@ html, body {
 .chart-8-canvas-wrp {
     width: 100%;
     min-height: 300px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 .row-grade {

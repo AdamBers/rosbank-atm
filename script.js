@@ -115,32 +115,30 @@ new Chart(ctx7, {
 
 ////////////////////////////////////////////// Chart-7
 const ctx8 = document.getElementById('chart-8');
-data8 = [
-    {
-        label: 'Dataset 1',
-        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
-        backgroundColor: "#E40038",
-    },
-    {
-        label: 'Dataset 1',
-        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
-        backgroundColor: "#001C3D",
-    },
-    {
-        label: 'Dataset 1',
-        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
-        backgroundColor: "#D9D9D9",
-    }
-]
+data8 = {
+    labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Ноя', 'Дек',],
+    datasets: [
 
+        {
+            label: 'Dataset 1',
+            data: [3, 1, 5, 7, 9, 3, 8, 7, 4, 5, 2, 1],
+            backgroundColor: "#E40038",
+        },
+        {
+            label: 'Dataset 1',
+            data: [ 9, 10, 8, 7, 4, 3, 2, 13, 4, 5, 7,],
+            backgroundColor: "#001C3D",
+        },
+        {
+            label: 'Dataset 1',
+            data: [10, 8, 7, 4, 3, 2, 13, 4, 5, 7, 9],
+            backgroundColor: "#D9D9D9",
+        }
+    ]
+}
 new Chart(ctx8, {
     type: 'bar',
-    data: {
-        labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Ноя', 'Дек',],
-        datasets: [{
-            data: data8,
-        }]
-    },
+    data: data8,
     options: {
         maintainAspectRatio: true,
         responsive: true,
