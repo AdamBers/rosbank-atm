@@ -68,35 +68,97 @@ new Chart(ctx3, {
 
 
 
-//////////////////////////////////////////////// Chart-7
-// const ctx7 = document.getElementById('chart-7');
-// data7 = [1, 2, 1]
-// backgroundColor1 = [
-//     '#E40038',
-//     '#001C3D',
-//     '#D9D9D9'
-// ]
+////////////////////////////////////////////// Chart-7
+const ctx7 = document.getElementById('chart-7');
+data7 = [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1]
+backgroundColor1 = [
+    '#E40038',
+    '#001C3D',
+    '#D9D9D9'
+]
 
 
-// new Chart(ctx7, {
-//     type: 'doughnut',
-//     data: {
-//         labels: ["Оценка 1-2", "Оценка 3-4", "Оценка 5"],
-//         datasets: [{
-//             data: data7,
-//             backgroundColor: backgroundColor1
-//         }]
-//     },
-//     options: {
-//         maintainAspectRatio: true,
-//         responsive: true,
-//         plugins: {
-//             legend: {
-//                 display: false,
-//             }
-//         }
-//     }
-// });
+new Chart(ctx7, {
+    type: 'line',
+    data: {
+        labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Ноя', 'Дек',],
+        datasets: [{
+            data: data7,
+            borderColor: "#EE293D",
+            cubicInterpolationMode: 'monotone',
+        }]
+    },
+    options: {
+        maintainAspectRatio: true,
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            }
+        },
+        scales: {
+            x: {
+                grid: {
+                    display: false
+                }
+            },
+            y: {
+                grid: {
+                    display: false
+                }
+            }
+        }
+    }
+});
+
+
+
+////////////////////////////////////////////// Chart-7
+const ctx8 = document.getElementById('chart-8');
+data8 = [
+    {
+        label: 'Dataset 1',
+        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
+        backgroundColor: "#E40038",
+    },
+    {
+        label: 'Dataset 1',
+        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
+        backgroundColor: "#001C3D",
+    },
+    {
+        label: 'Dataset 1',
+        data: [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1],
+        backgroundColor: "#D9D9D9",
+    }
+]
+
+new Chart(ctx8, {
+    type: 'bar',
+    data: {
+        labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Ноя', 'Дек',],
+        datasets: [{
+            data: data8,
+        }]
+    },
+    options: {
+        maintainAspectRatio: true,
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            }
+        },
+        scales: {
+            x: {
+                stacked: true,
+            },
+            y: {
+                stacked: true
+            }
+        }
+    }
+});
 
 
 

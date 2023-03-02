@@ -62,7 +62,7 @@ html, body {
 .canvas-wrp {
     width: 188px;
     height: 188px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     margin-bottom: 42px;
     /* border-radius: 50%; */
@@ -284,7 +284,7 @@ html, body {
 .chart-7-canvas-wrp {
     width: 100%;
     min-height: 300px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
 }
 
 
