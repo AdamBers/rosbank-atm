@@ -7,7 +7,6 @@ backgroundColor1 = [
     '#D9D9D9'
 ]
 
-
 new Chart(ctx1, {
     type: 'doughnut',
     data: {
@@ -35,7 +34,7 @@ new Chart(ctx1, {
 //////////////////////////////////////////////// Chart-3
 const ctx3 = document.getElementById('chart-3');
 data3 = [1, 2, 1]
-backgroundColor1 = [
+backgroundColor2 = [
     '#E40038',
     '#001C3D',
     '#D9D9D9'
@@ -48,7 +47,7 @@ new Chart(ctx3, {
         labels: ["Оценка 1-2", "Оценка 3-4", "Оценка 5"],
         datasets: [{
             data: data1,
-            backgroundColor: backgroundColor1
+            backgroundColor: backgroundColor2
         }]
     },
     options: {
@@ -71,12 +70,6 @@ new Chart(ctx3, {
 ////////////////////////////////////////////// Chart-7
 const ctx7 = document.getElementById('chart-7');
 data7 = [3, 4, 5, 7, 9, 10, 8, 7, 4, 3, 2, 1]
-backgroundColor1 = [
-    '#E40038',
-    '#001C3D',
-    '#D9D9D9'
-]
-
 
 new Chart(ctx7, {
     type: 'line',
@@ -121,17 +114,17 @@ data8 = {
 
         {
             label: 'Dataset 1',
-            data: [3, 1, 5, 7, 9, 3, 8, 7, 4, 5, 2, 1],
+            data: [3, 1, 5, 7, 9, 3, 2, 7, 4, 5, 2, 1],
             backgroundColor: "#E40038",
         },
         {
             label: 'Dataset 1',
-            data: [ 9, 10, 8, 7, 4, 3, 2, 13, 4, 5, 7,],
+            data: [9, 10, 8, 7, 4, 3, 2, 3, 4, 5, 7, 5],
             backgroundColor: "#001C3D",
         },
         {
             label: 'Dataset 1',
-            data: [10, 8, 7, 4, 3, 2, 13, 4, 5, 7, 9],
+            data: [10, 8, 7, 4, 3, 2, 2, 4, 5, 7, 9, 3],
             backgroundColor: "#D9D9D9",
         }
     ]
@@ -150,18 +143,19 @@ new Chart(ctx8, {
         scales: {
             x: {
                 stacked: true,
+                grid: {
+                    display: false
+                }
             },
             y: {
-                stacked: true
+                stacked: true,
+                grid: {
+                    display: false
+                }
             }
         }
     }
 });
-
-
-
-
-
 
 
 //////////////////////////////////////////////// Chart-9
