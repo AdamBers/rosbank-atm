@@ -8,9 +8,9 @@ html, body {
 }
 
 .container {
-    display: flex;
-    width: 100%;
+    max-width: 1200px;
     min-height: 100vh;
+    margin: 0 auto;
 }
 
 .nav {
@@ -35,6 +35,7 @@ html, body {
     border-radius: 10px;
     margin-bottom: 42px;
     padding-bottom: 24px;
+    max-width: 670px;
 }
 
 .chart-title p {
@@ -139,7 +140,7 @@ html, body {
 
 
 /* ////////////////////////////////////////////////////////// */
-.chart-item-2, .chart-item-4 {
+.chart-item-2, .chart-item-4, .chart-item-6 {
     display: block;
     max-width: 670px;
     padding: 24px;
@@ -197,7 +198,6 @@ html, body {
     justify-content: space-between;
 }
 
-.w3-red {}
 
 .w3-red, .w3-hover-red:hover {
     border-radius: 20px;
@@ -258,7 +258,7 @@ html, body {
 }
 
 .chart-item-6 {
-    min-width: 670px;
+    max-width: 670px;
     padding: 30px 24px;
     margin-bottom: 42px;
 }
@@ -276,7 +276,6 @@ html, body {
     color: #241023;
     margin-bottom: 38px;
     align-items: center;
-    vertical-align: middle;
     height: 24px;
     line-height: 24px;
 }
