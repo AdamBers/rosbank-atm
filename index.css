@@ -53,7 +53,6 @@ html, body {
 }
 
 .chart-item-1, .chart-item-3, .chart-item-5, .chart-item-9 {
-    /* display: inline-block; */
     min-width: 300px;
     border: 1px solid #EBEDEF;
     padding: 32px 12px 48px;
@@ -65,10 +64,12 @@ html, body {
 .canvas-wrp {
     width: 188px;
     height: 188px;
-    /* border: 1px solid black; */
     margin: 0 auto;
     margin-bottom: 42px;
-    /* border-radius: 50%; */
+}
+
+.chart-7-canvas-wrp, .chart-8-canvas-wrp {
+    max-height: 400px;
 }
 
 .legend-item {

@@ -111,11 +111,11 @@ const ctx8 = document.getElementById('chart-8');
 data8 = {
     labels: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сент', 'Окт', 'Ноя', 'Дек',],
     datasets: [
-
         {
             label: 'Dataset 1',
             data: [3, 1, 5, 7, 9, 3, 2, 7, 4, 5, 2, 1],
             backgroundColor: "#E40038",
+
         },
         {
             label: 'Dataset 1',
@@ -153,7 +153,8 @@ new Chart(ctx8, {
                     display: false
                 }
             }
-        }
+        },
+        barThickness: 36,
     }
 });
 
